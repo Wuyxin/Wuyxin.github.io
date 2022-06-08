@@ -15,10 +15,21 @@ https://templatemo.com/tm-518-sentra
 
 body {
   font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
 }
 
 a {
   color: var(--theme-font-color);
+}
+
+pp {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
 }
 
 b {
@@ -27,7 +38,7 @@ b {
 }
 
 p {
-  font-size: 18px;
+  font-size: 17px;
   color: #7a7a7a;
   line-height: 24px;
 }
@@ -36,6 +47,7 @@ p {
   width: 77.5%;
   float: right;
 }
+
 
 .content-section {
   padding-top: 40px;
@@ -53,6 +65,7 @@ p {
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
 }
+
 
 #thoughts .content-section {
   padding-bottom: 300px;
@@ -816,9 +829,12 @@ header {
 /* Blog Style */
 
 #blog {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 80px;
+  
 }
 
 #blog .tabs {
@@ -929,7 +945,7 @@ header {
 #blog .item .text-content span {
   display: inline-block;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 400;
   color: #7a7a7a;
   letter-spacing: 0.5px;
   margin-bottom: 15px;
@@ -939,8 +955,13 @@ header {
   margin-top: 10px;
 }
 
+
+
 #blog .item .text-content p {
-  font-size: 17px;
+  /* font-weight: 100; */
+  color: #676868;
+  line-height: 22px;
+  font-size: 15px;
 }
 
 

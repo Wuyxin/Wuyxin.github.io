@@ -26,8 +26,10 @@ https://templatemo.com/tm-518-sentra
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Lato:wght@700;900&family=Merriweather:wght@700&family=PT+Serif:ital,wght@1,700&family=Playfair+Display:wght@400;600&family=Ubuntu:wght@700&family=Vollkorn:wght@400;500;600&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Lato:wght@100;300;400;700;900&family=Merriweather:wght@700&family=PT+Serif:ital,wght@1,700&family=Playfair+Display:wght@400;600&family=Ubuntu:wght@700&family=Vollkorn:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> -->
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
   </head>
 
@@ -50,6 +52,7 @@ https://templatemo.com/tm-518-sentra
             <li><a href="#services">Services</a></li>
             <li><a href="#featured">Featured</a></li>
             <li><a href="#projects">Recent Projects</a></li>
+            <li><a href="#news">News</a></li>
             <li><a href="#video">Presentation</a></li>
             <li><a href="#blog">Research Topics</a></li>
             <li><a href="#contact">Contact Us</a></li>
@@ -69,6 +72,13 @@ https://templatemo.com/tm-518-sentra
               <span class="rect"></span>
               <span class="circle"></span>
               About Me
+            </a>
+          </li>
+          <li>
+            <a href="#news">
+              <span class="rect"></span>
+              <span class="circle"></span>
+              What's New
             </a>
           </li>
           <li>
@@ -96,7 +106,7 @@ https://templatemo.com/tm-518-sentra
             <a href="#thoughts">
               <span class="rect"></span>
               <span class="circle"></span>
-              Ideas
+              Thoughts
             </a>
           </li>
         </ul>
@@ -132,10 +142,16 @@ https://templatemo.com/tm-518-sentra
           </p>
         </div>
       </section>
+      <section id="news" class="content-section">
+        <div class="section-heading">
+          <h1>What's<br><em>New</em></h1>
+          <p>[May 2022] One paper is accepted by TPAMI and another is accepted by ICML.</p>
+        </div>
+      </section>
       <section id="blog" class="content-section">
         <div class="section-heading">
           <h1>Research<br><em>Topics</em></h1>
-          <p>Excited to explore more!</p>
+          <pp>Excited to explore more!</pp>
         </div>
         <div class="section-content">
           <div class="tabs-content">
@@ -151,6 +167,24 @@ https://templatemo.com/tm-518-sentra
                   <ul>
                     <li>
                       <div class="item">
+                        <img src="img/dse.jpg" alt="">
+                        <div class="text-content">
+                          <h4>Deconfounding to Explanation Evaluation in Graph Neural Networks </h4>
+                          <span><w style="color:rgb(161, 0, 0);"> <b>Preprint.</b></w><br>
+                            <w style="color:rgb(0, 0, 0);"><b>Ying-Xin Wu</b>, Xiang Wang, An Zhang, Xia Hu, Fuli Feng, Xiangnan He, Tat-Seng Chua</w></span>
+                            <p><b>What</b>: A new paradigm to evaluate GNN explanations.<br>
+                              <b>Why evaluation</b>: Explanations evaluation fundamentally guides the diretion of GNNs explainability.<br>
+                              <b>Insight</b>: Removal-based evaluation hardly reflects the true importance of explanations. <br>
+                              <b>Results</b>: More faithful ranking of different explanations and explanatory methods.</p>
+                          <div class="accent-button">
+                            <a href="https://arxiv.org/abs/2201.08802" target="_blank" class="button">Paper</a>
+                            <a href="https://anonymous.4open.science/r/DSE-24BC/" target="_blank" class="button">Code</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- <li>
+                      <div class="item">
                         <img src="img/dir.jpg" alt="">
                         <div class="text-content">
                           <h4>Discovering Invariant Rationales for Graph Neural Networks</h4>
@@ -167,16 +201,19 @@ https://templatemo.com/tm-518-sentra
                           </div>
                         </div>
                       </div>
-                    </li>
+                    </li> -->
                     <li>
                       <div class="item">
                         <img src="img/refine.png" alt="">
                         <div class="text-content">
                           <h4>Towards Multi-Grained Explainability for Graph Neural Networks</h4>
-                          <span><w style="color:rgb(161, 0, 0);"> NeurIPS. December 2021.</w><br>
+                          <span><w style="color:rgb(161, 0, 0);"> <b>NeurIPS</b>. December 2021.</w><br>
                             <w style="color:rgb(0, 0, 0);">Xiang Wang, <b>Ying-Xin Wu</b>, An Zhang, Xiangnan He, Tat-Seng Chua.</w></span>
-                          <p>We exploit the pre-training and fine-tuning idea to develop an explainer that generates multi-grained explanations, 
-                            i.e., global patterns for a group or local patterns for an instance's prediction. </p>
+                          <p><b>What</b>: ReFine, a two-step explainer.<br>
+                            <b>How</b>: It generates multi-grained explanations via pre-training and fine-tuning. <br>
+                            <b>Results</b>: Obtain both global (for a group) and local explanations (for an instance).</p>
+                          <!-- <p>We exploit the pre-training and fine-tuning idea to develop an explainer that generates multi-grained explanations, 
+                            i.e., global patterns for a group or local patterns for an instance's prediction. </p> -->
                           <div class="accent-button">
                             <a href="https://papers.nips.cc/paper/2021/hash/99bcfcd754a98ce89cb86f73acc04645-Abstract.html" target="_blank" class="button">Paper</a>
                             <a href="https://github.com/Wuyxin/ReFine" target="_blank" class="button">Code</a>
@@ -186,13 +223,20 @@ https://templatemo.com/tm-518-sentra
                     </li>
                     <li>
                       <div class="item">
-                        <img src="img/dse.jpg" alt="">
+                        <img src="img/rc-explainer.jpg" alt="">
                         <div class="text-content">
-                          <h4>Deconfounding to Explanation Evaluation in Graph Neural Networks </h4>
-                          <span><w style="color:rgb(161, 0, 0);"> Under Review.</w><br>
-                            <w style="color:rgb(0, 0, 0);"><b>Ying-Xin Wu</b>, Xiang Wang, An Zhang, Xia Hu, Fuli Feng, Xiangnan He, Tat-Seng Chua</w></span>
+                          <h4>Reinforced Causal Explainer for Graph Neural Networks</h4>
+                          <span>
+                            <w style="color:rgb(161, 0, 0);"> <b>TPAMI</b>. May 2022 (accept date).</w><br>
+                            <w style="color:rgb(0, 0, 0);">Xiang Wang, <b>Ying-Xin Wu</b>, An Zhang, Fuli Feng, Xiangnan He & Tat-Seng Chua.</w>
+                          </span>
+                          <p>
+                            <b>What</b>: Reinforced Causal Explainer (RC-Explainer).<br>
+                            <b>How</b>: It frames an explanatory subgraph via successively adding edges using a policy network. <br>
+                            <b>Results</b>: Faithful and concise explanations.</p>
                           <div class="accent-button">
-                            <!-- <a href="https://arxiv.org/abs/2201.08802" target="_blank" class="button">Paper</a> -->
+                            <a href="https://arxiv.org/pdf/2204.11028.pdf" target="_blank" class="button">Paper</a>
+                            <a href="https://github.com/xiangwang1223/reinforced_causal_explainer" target="_blank" class="button">Code</a>
                           </div>
                         </div>
                       </div>
@@ -207,15 +251,35 @@ https://templatemo.com/tm-518-sentra
                         <div class="text-content">
                           <h4>Discovering Invariant Rationales for Graph Neural Networks</h4>
                           <span>
-                            <w style="color:rgb(161, 0, 0);"> ICLR. March 2022.</w><br>
+                            <w style="color:rgb(161, 0, 0);"> <b>ICLR</b>. March 2022.</w><br>
                             <w style="color:rgb(0, 0, 0);"><b>Ying-Xin Wu</b>, Xiang Wang, An Zhang, Xiangnan He, Tat-Seng Chua.</w>
                           </span>
-                          <p>We propose one novel objective which identifies causal features that are invariant
-                            under any interventional distributions, thus pursuing intrinsic interpretable GNNs 
-                            that are robust and generalizable to out-of-distribution datasets. </p>
+                          <p>
+                            <b>What</b>: An invariant learning paradigm/objective for GNNs.<br>
+                            <b>How</b>: We construct interventional distributions as "multiple eyes" to discover the features that make the label invariant, that is, causal features.<br>
+                            <b>Results</b>: Intrinsic interpretable GNNs that are robust and generalizable to OOD datasets. </p>
                           <div class="accent-button">
                             <a href="https://arxiv.org/abs/2201.12872" target="_blank" class="button">Paper</a>
                             <a href="https://github.com/Wuyxin/DIR-GNN" target="_blank" class="button">Code</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item">
+                        <img src="img/blog_3.jpg" alt="">
+                        <div class="text-content">
+                          <h4>Let Invariant Rationale Discovery Inspire Graph Contrastive Learning</h4>
+                          <span>
+                            <w style="color:rgb(161, 0, 0);"> <b>ICML</b>. June 2022.</w><br>
+                            <w style="color:rgb(0, 0, 0);">Sihang Li, Xiang Wang, An Zhang, <b>Ying-Xin Wu</b>, Xiangnan He and Tat-Seng Chua</w>
+                          </span>
+                          <!-- <p>We propose one novel objective which identifies causal features that are invariant
+                            under any interventional distributions, thus pursuing intrinsic interpretable GNNs 
+                            that are robust and generalizable to out-of-distribution datasets. </p> -->
+                          <div class="accent-button">
+                            <a href="" target="_blank" class="button">Paper</a>
+                            <a href="https://github.com/lsh0520/RGCL" target="_blank" class="button">Code</a>
                           </div>
                         </div>
                       </div>
@@ -248,11 +312,13 @@ https://templatemo.com/tm-518-sentra
                         <div class="text-content">
                           <h4>Knowledge-Aware Meta-learning for Low-Resource Text Classification</h4>
                           <span>
-                            <w style="color:rgb(161, 0, 0);"> EMNLP (Oral). Nov. 2021. Short Paper.</w><br>
+                            <w style="color:rgb(161, 0, 0);"> <b>EMNLP (Oral)</b>. Nov. 2021. Short Paper.</w><br>
                             <w style="color:rgb(0, 0, 0);">Huaxiu Yao, <b>Ying-Xin Wu</b>, Maruan Al-Shedivat, Eric P. Xing.</w>
                           </span>
-                          <p> We study a low-resource text classification problem and bridge the gap between meta-training and meta-testing tasks 
-                            by introducing additional representation for each sentence learned from the extracted sentence-specific knowledge graph. </p>
+                          <p> 
+                            <b>What</b>: A meta-learning algorithm for low-resource text classification problem.<br>
+                            <b>How</b>: We extract sentence-specific graphs from knowledge graph to boost represnetation learning.<br>
+                            <b>Results</b>: Better generalization between meta-training and meta-testing tasks.</p>
                           <div class="accent-button">
                             <a href="https://arxiv.org/abs/2109.04707" target="_blank" class="button">Paper</a>
                           </div>
@@ -269,7 +335,7 @@ https://templatemo.com/tm-518-sentra
       <section id="featured" class="content-section">
         <div class="section-heading">
           <h1>Personal<br><em>Experiences</em></h1>
-          <p>By reversed time order.</p>
+          <pp>By reversed time order.</pp>
         </div>
         <div class="section-content">
           <div class="owl-carousel owl-theme">
@@ -318,7 +384,7 @@ https://templatemo.com/tm-518-sentra
               </div>
               <div class="text-content">
                 <h4>Stanford University</h4>
-                <span>2021.3 - now</span><br>
+                <span>2021.3 - 2021.12</span><br>
                 <span>Advisor: <a href="https://huaxiuyao.mystrikingly.com/"> Dr. Huaxiu Yao</a></span>
                 <p>
                   I also collaborated with Huaxiu about Meta-learning and Knowledge Graph, and we are currently building machine learning models that are robust to distribution shifts.
@@ -339,14 +405,13 @@ https://templatemo.com/tm-518-sentra
       <section id="thoughts" class="content-section">
         <div class="section-heading">
           <h1>Research<br><em>Thoughts</em></h1>
-          <p>Sometimes I write some casual thoughts here.</p>
+          <pp>Sometimes I write some casual thoughts here.</pp>
         </div>
         <div class="section-content">
           <p>
             <li>
               Explanations can make deep models more trustworthy. (x) <br>
               &emsp; Explanations can make deep models more transparent, unbiased model can make themselves more trustworthy. (√)
-
             </li>
             <li>
               ...
@@ -362,7 +427,7 @@ https://templatemo.com/tm-518-sentra
         </div>
         <div class="section-content">
           <p>I enjoy calligraphy and extreme sports.</p>
-          <p>Besides, as requsted by my BF, I include his link <a href="https://rabbitwhite1.github.io/">here</p>
+          <p>As requsted by my BF, I include his link <a href="https://rabbitwhite1.github.io/">here</p>
           <p></p>
         </div>
       </section>
